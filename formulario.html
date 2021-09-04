@@ -7,11 +7,14 @@
     <title>Formulario</title>
 </head>
 <body>
+    <!-- Ruta a donde se enviarán los datos-->
+    <fieldset>
+        <legend>Registro de datos</legend>
     <form action="action.html" method="get">
 
         <div>
             <label for="name" style="display: block;">Nombre: </label>
-            <!-- Las validaciones del lado del frontend no son seguras-->>
+            <!-- Las validaciones del lado del frontend no son seguras-->
             <input type="text" name="name" id="name" placeholder="Name" required> 
         </div>
 
@@ -25,7 +28,57 @@
             <textarea name="description" id="description" cols="20" rows="10" placeholder="Comentarios"></textarea>
         </div>
 
+        <!-- Select -->
+        <div>
+            <label for="cars">Carros: </label><br>
+            <!-- con "disable" podemos deshabilitar el input-->
+            <select name="cars" id="">
+                <option value="0">Selecciona tu carro</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Seleccciona sexo:</p>
+            <div>
+                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="femenino" value="femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="n/a" value="n/a">
+                <label for="n/a">Prefiero no decirlo</label>
+            </div>
+        </div>
+
+        <!-- checkbox-->
+        <div>
+            <p>Vehículos con los que cuenta</p>
+
+            <div>
+                <input type="checkbox" name="vehiculo1" id="bici" value="bici">
+                <label for="vehiculo1">Bici</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="vehiculo2" id="moto" value="moto">
+                <label for="vehiculo2">Moto</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="vehiculo3" id="carro" value="carro">
+                <label for="vehiculo3">Carro</label>
+            </div>
+        </div>
+
         <input type="submit" value="Enviar">
     </form>
+    </fieldset>
 </body>
 </html>
