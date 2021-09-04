@@ -9,8 +9,21 @@
 <body>
     <form action="action.html" method="get">
 
-        <label for="name">Nombre: </label>
-        <input type="text" name="name" id="name" placeholder="Name">
+        <div>
+            <label for="name" style="display: block;">Nombre: </label>
+            <!-- Las validaciones del lado del frontend no son seguras-->>
+            <input type="text" name="name" id="name" placeholder="Name" required> 
+        </div>
+
+        <div>
+            <label for="age">Edad: </label>
+            <input type="number" name="age" id="age" placeholder="Edad" min="12" max="50" step="2">
+        </div>
+       
+        <div>
+            <label for="descripcion" style="display: block;">Descripcion:</label>
+            <textarea name="description" id="description" cols="20" rows="10" placeholder="Comentarios"></textarea>
+        </div>
 
         <input type="submit" value="Enviar">
     </form>
