@@ -1,0 +1,14 @@
+.tabla-g{
+    width: 800px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse:collapse
+}
+
+.tabla-g th{
+    background-color: rgb(120, 141, 99); 
+}
+
+.tabla-g tr{
+    background-color: rgb(175, 206, 144);
+}
